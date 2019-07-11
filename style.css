@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'navbar navbar navbar navbar'
+                         'section section aside aside'
+                         'footer footer footer footer';
+   grid-template-rows: 30vh 20vh 60vh 40vh;
+   grid-gap: 15px;
+   background-color: white;
+}
+  header{
+      grid-area: header;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+  }
+  nav{
+      grid-area: navbar;
+      background-color: aquamarine;
+      display: flex;
+      align-items: center;
+      justify-content: space-around
+  }
+  section{
+      grid-area: section;
+      background-color: aqua
+  }
+  aside{
+      grid-area: aside;
+      background-color: brown
+
+  }
+footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+nav a {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(65,61 ,61);
+    width: 50px;
+    height: 25;
+}
+header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
